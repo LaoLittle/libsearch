@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     exec_name = b + 1;
   }
 
-  if (argc == 1) {
+  if (argc != 2) {
     std::cout << "\noverview: find a dynamic library"
               << "\n\n"
               << "usage: " << exec_name
