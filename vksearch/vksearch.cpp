@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
   auto mod = LoadLibraryA(name);
 
   if (mod == nullptr) {
-    std::cerr << "library named " << name << " not found" << std::endl;
+    std::cerr << "library named \"" << name << "\" not found" << std::endl;
     return -1;
   }
 
