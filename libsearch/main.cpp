@@ -11,8 +11,7 @@ int main(int argc, char *argv[]) {
   if (argc != 2) {
     std::cout << "\noverview: find a dynamic library"
               << "\n\n"
-              << "usage: " << exec_name
-              << " <lib>\n"
+              << "usage: " << exec_name << " <lib>\n"
               << std::endl;
     return 0;
   }
@@ -25,7 +24,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
-  WCHAR chars[MAX_PATH] = {};
+  WCHAR chars[MAX_PATH]{};
   auto read = GetModuleFileNameW(mod, chars, MAX_PATH);
   auto std_out = GetStdHandle(STD_OUTPUT_HANDLE);
 
